@@ -1,0 +1,148 @@
+.home{
+  .home-nav{
+    display: flex;
+    line-height: 46px;
+  }
+  .t1{
+    font-weight: bold;
+    color: #f3f2f1;
+  }
+
+  .t2{
+    color: #ffa500;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  /deep/ .van-nav-bar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+  }
+
+  /deep/ .home-search .van-search{
+    padding: 0;
+    border-radius: 17px;
+    overflow: hidden;
+    background: transparent;
+    .van-search__content{
+      background-color: transparent;
+      .van-cell{
+        background-color: transparent;
+      }
+    }
+  }
+
+  /deep/ .home-search .van-icon{
+    color:#ffa500;
+  }
+
+  .home-content{
+    padding: 10px 10px 0 10px;
+  }
+
+  .banner-box{
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .index-box{
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+    display: flex;
+    >div{
+      width: 12px;
+      height: 2px;
+      background-color: rgba(0, 0, 0, .5);
+      
+      margin-right: 5px;
+      border-radius: 1px;
+      &.active{
+        background-color:#ffa500;
+      }
+    }
+  }
+
+  .product-box{
+    margin-top: 10px;
+  }
+
+  .pro-title-box{
+    background-color: rgba(0,0,0,.6);
+    padding: 10px 0;
+  }
+
+  .pro-title{
+    float: left;
+    padding: 0 15px;
+    height: 32px;
+    background-color:#ffa500;
+    color: #fff;
+    line-height: 32px;
+    font-size: 14px;
+    border-top-right-radius: 16px;
+  }
+
+  .products{
+    margin-top: 10px;
+  }
+
+  .pro-item{
+    width: calc(~"50% - 25px");
+    margin-right: 10px;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.6);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    &:nth-child(2n){
+      margin-right: 0;
+    } 
+  }
+
+  .img-box{
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    .hot{
+      position: absolute;
+      left: 8px;
+      top: 0;
+      width: 24px;
+      text-align: center;
+      line-height: 24px;
+      height: 24px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      background-color:#ffa500;
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+
+  .pro-info{
+    margin-top: 10px;
+  }
+
+  .pro-name{
+    margin-bottom: 5px;
+    font-size: 17px;
+    color:#ff8100;
+  }
+
+  .pro-enname{
+    color: #ffb75d;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .pro-price{
+    color: #ff7600;
+    font-size: 21px;
+  }
+  
+}
